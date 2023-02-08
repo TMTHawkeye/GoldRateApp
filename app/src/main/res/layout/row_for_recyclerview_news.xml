@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/linear_article"
+    android:background="@drawable/border"
+    android:padding="@dimen/_2sdp"
+    android:layout_marginBottom="@dimen/_5sdp"
+    android:foreground="?android:attr/selectableItemBackground">
+
+    <ImageView
+        android:id="@+id/image_article"
+        android:padding="@dimen/_2sdp"
+        android:layout_width="@dimen/_70sdp"
+        android:layout_height="@dimen/_70sdp"
+        android:src="@drawable/gold_icon" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp">
+
+            <TextView
+                android:id="@+id/title_news"
+                style="@style/textStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Title of news article"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12sdp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                />
+
+            <TextView
+                android:layout_below="@+id/title_news"
+                android:id="@+id/date_news"
+                style="@style/textStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date of article"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_11sdp" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+        <TextView
+            android:id="@+id/arthor_name_id"
+            style="@style/textStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Arthor name"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10sdp" />
+    </LinearLayout>
+
+</LinearLayout>

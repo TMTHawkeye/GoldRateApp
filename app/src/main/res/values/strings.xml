@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Live Gold Rate: Metal Prices</string>
+
+    <string name="home">Home</string>
+    <string name="news">News</string>
+    <string name="purity">Purity</string>
+
+
+    <string name="main_page_selected">%s page is selected</string>
+
+    <string name="title_home">Home</string>
+    <string name="title_news">News</string>
+    <string name="title_settings">Settings</string>
+
+    <string name="content_home">Home Screen</string>
+    <string name="content_favorite">Favourite Screen</string>
+    <string name="content_chat">Chat Screen</string>
+    <string name="content_notification">Notification Screen</string>
+    <string name="content_profile">Profile Screen</string>
+
+    <string name="empty_value">empty</string>
+    <string name="count">10</string>
+    <string name="count_update">20</string>
+
+
+    <string name="Home_title">Live Gold Price</string>
+    <string name="Gold">Gold</string>
+    <string name="Silver">Silver</string>
+    <string name="Platinum">Platinum</string>
+    <string name="goldNews">Gold News</string>
+    <string name="purity1">Based on Purity</string>
+
+    <style name="title_style" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:textSize">@dimen/_16sdp</item>
+        <item name="android:fontFamily">@font/gilroy_bold</item>
+    </style>
+
+    <style name="textStyle" parent="TextAppearance.AppCompat">
+        <item name="android:textColor">@color/color_white</item>
+        <item name="android:fontFamily">@font/gilroy_medium</item>
+    </style>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_350sdp"
+        android:background="@color/white"
+        android:layout_centerInParent="true"
+        >
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/bk1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_150sdp"
+            app:srcCompat="@drawable/backpressicon"
+            android:padding="@dimen/_10sdp"
+            />
+
+        <TextView
+            android:id="@+id/bk2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bk1"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/black"
+            android:fontFamily="@font/gilroy_medium"
+            android:text="Your opinion matters to us!"
+            android:textSize="@dimen/_18sdp"
+            android:layout_marginTop="@dimen/_30sdp"
+            />
+        <TextView
+            android:id="@+id/bk3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bk2"
+            android:layout_centerHorizontal="true"
+            android:textColor="#949292"
+            android:fontFamily="@font/gilroy_medium"
+            android:text="We work super hard to serve you  better and would love to know how would you rate our app?"
+            android:textSize="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:gravity="center"
+            />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:orientation="vertical"
+            android:layout_below="@id/bk3">
+
+            <androidx.cardview.widget.CardView
+                android:foreground="?android:attr/selectableItemBackground"
+                android:id="@+id/ratenow"
+                android:layout_width="@dimen/_85sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_below="@+id/questionanimation"
+                android:layout_gravity="center_horizontal"
+                app:cardBackgroundColor="@color/green"
+                app:cardCornerRadius="@dimen/_8sdp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Rate Us"
+                    android:textColor="@color/white"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_marginVertical="@dimen/_10sdp"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/exitbtn"
+                android:layout_width="@dimen/_85sdp"
+                android:layout_height="@dimen/_30sdp"
+                app:cardBackgroundColor="#E1E1E1"
+                app:cardCornerRadius="@dimen/_8sdp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Later"
+                    android:textColor="#50255B"
+                    android:textStyle="bold" />
+            </androidx.cardview.widget.CardView>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

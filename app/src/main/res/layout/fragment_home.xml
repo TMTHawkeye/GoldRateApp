@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.infideap.drawerbehavior.Advance3DDrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="@dimen/fab_size"
+    android:orientation="vertical"
+    android:id="@+id/drawer"
+    tools:ignore="ExtraText">
+
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="220dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/drawer_nav_layout"
+        app:itemIconSize="17dp"
+        app:menu="@menu/drawer_menu" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:id="@+id/relative_title"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize">
+
+            <ImageView
+                android:id="@+id/menuIcon"
+                android:layout_width="@dimen/_20sdp"
+                android:layout_height="@dimen/_20sdp"
+                android:src="@drawable/menu_icon"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_20sdp"/>
+
+            <TextView
+                style="@style/title_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="@string/Home_title" />
+        </RelativeLayout>
+
+
+        <com.google.android.material.tabs.TabLayout
+            android:foreground="?android:attr/selectableItemBackground"
+            android:id="@+id/tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/_25sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            app:tabBackground="@drawable/tab_selected_bg"
+            app:tabIndicatorColor="@color/color_white"
+            app:tabIndicatorHeight="0dp"
+            app:tabMode="fixed"
+            app:tabRippleColor="@color/color_white"
+            app:tabSelectedTextColor="@color/color_white"
+            app:tabTextAppearance="@style/TextAppearance.AppCompat.Small"
+            app:tabTextColor="@color/color_black" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tabs"
+            android:layout_marginTop="@dimen/_5sdp"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior" />>
+    </LinearLayout>
+</com.infideap.drawerbehavior.Advance3DDrawerLayout>
